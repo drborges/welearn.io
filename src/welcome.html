@@ -1,0 +1,29 @@
+<template>
+  <section>
+    <h2>${heading}</h2>
+
+    <div class="row">
+      <form role="form" submit.delegate="welcome()" class="col s12">
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" id="first_name" class="validate" value.bind="firstName">
+            <label for="first_name">First Name</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input type="text" id="last_name" class="validate" value.bind="lastName">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label>Full Name</label>
+          <p class="help-block">${fullName}</p>
+        </div>
+
+        <button type="submit" class="waves-effect waves-light btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</template>
