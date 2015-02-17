@@ -1,5 +1,13 @@
 <template>
   <import from="./on-snapshot"></import>
+  <style type="text/css">
+  #board canvas {
+    width: 700px;
+    height: 700px;
+  }
+  </style>
 
-  <canvas on-snapshot.call="saveSnapshot()"></canvas>
+  <div id="board">
+    <canvas style="margin: 0; border: 1px solid black;" on-snapshot.call="saveSnapshot()"></canvas>
+  </div>
 </template>
